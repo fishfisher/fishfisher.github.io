@@ -1,17 +1,41 @@
+/* Setting colors and font */
 body {
-	color: dark;
+		color: white;
     background-color: #ffff;
     text-align: center;
     font-family: "Baloo Tammudu 2", Monaco, monospace;
     font-size: 20px;
-
+		line-height: 130%;
+		text-shadow: 2px 2px 8px gray;
     }
 
+/* This class centers its content */
 .center {
-  margin: 0;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* Adding a background image covering the whole page */
+html {
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Content float at bottom */
+#bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Remove underline on link and increase font size */
+a {
+    text-decoration: none !important;
+		font-size: 50px;
 }
