@@ -6,7 +6,7 @@ body {
     font-family: "Amatic SC", Monaco, monospace;
     font-size: 20px;
 		text-shadow: 2px 2px 8px #333333;
-		overflow: hidden
+		overflow: hidden;
     }
 
 /* This class centers its content */
@@ -15,7 +15,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	margin-right:100px;
 }
 
 /* Adding a background image covering the whole page */
@@ -39,4 +38,15 @@ html {
 a {
     text-decoration: none !important;
 		font-size: 40px;
+}
+
+
+/* Use smaller font for smaller screen */
+@media (max-width: 479px) {
+	body {
+		font-size: 13px;
+	}
+	a {
+		font-size: 20px;
+	}
 }
