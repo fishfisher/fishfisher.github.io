@@ -3,10 +3,10 @@ body {
 		color: white;
     background-color: #ffff;
     text-align: center;
-    font-family: "Baloo Tammudu 2", Monaco, monospace;
+    font-family: "Amatic SC", Monaco, monospace;
     font-size: 20px;
-		line-height: 130%;
-		text-shadow: 2px 2px 8px gray;
+		text-shadow: 2px 2px 8px #333333;
+		overflow: hidden
     }
 
 /* This class centers its content */
@@ -15,17 +15,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+	margin-right:100px;
 }
 
 /* Adding a background image covering the whole page */
 html {
-	min-height: 100%;
   background: url(images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-	padding: env(safe-area-inset);
 }
 
 /* Content float at bottom */
@@ -39,5 +38,5 @@ html {
 /* Remove underline on link and increase font size */
 a {
     text-decoration: none !important;
-		font-size: 50px;
+		font-size: 40px;
 }
